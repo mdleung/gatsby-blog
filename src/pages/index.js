@@ -48,7 +48,7 @@ export const pageQuery = graphql`
           tags
           heroImage {
             fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
-              ...GatsbyContentfulFluid
+              ...GatsbyContentfulFluid_tracedSVG
             }
           }
           description {
@@ -62,7 +62,7 @@ export const pageQuery = graphql`
     allContentfulPerson(
       filter: { contentful_id: { eq: "15jwOBqpxqSAOy2eOO4S0m" } }
     ) {
-      edges {
+  edges {
         node {
           name
           shortBio {
@@ -76,7 +76,7 @@ export const pageQuery = graphql`
               resizingBehavior: PAD
               background: "rgb:000000"
             ) {
-              ...GatsbyContentfulFluid
+              ...GatsbyContentfulFluid_tracedSVG
             }
           }
         }
